@@ -40,14 +40,17 @@ export const ThemeSelector: React.FC = () => {
           ref={selectRef}
           className={classes.select}
         >
-          <option value="auto">Auto</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
+          <option style={{ color: 'black' }} value="auto">
+            Auto
+          </option>
+          <option style={{ color: 'black' }} value="light">
+            Light
+          </option>
+          <option style={{ color: 'black' }} value="dark">
+            Dark
+          </option>
         </select>
-        <div className={classes.selectIcon}>
-          <Chevron className={classes.iconUp} />
-          <Chevron className={classes.iconDown} />
-        </div>
+        <div className={classes.selectIcon}></div>
       </label>
     </div>
   )
